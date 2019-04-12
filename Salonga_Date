@@ -1,0 +1,160 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int mm, dd, yyyy;
+	
+	cout << "Executing Date in Format (mm dd, yyyy) \n" << endl;
+do
+{
+		cout << "Enter month (1-12): "; 
+	cin >> mm;
+	
+	cout << "Enter day (dd): "; 
+	cin >> dd;
+	
+	cout << "Enter year (yyyy): "; 
+	cin >> yyyy;
+	
+	if (mm > 0 && mm <= 12 && dd > 0 && dd < 32 && yyyy > 0000 && yyyy < 9999)
+		switch (mm)
+		{
+			case 1:
+				if (dd > 0 && dd <= 31)
+				{
+					cout << "January " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 2:
+				if (dd > 0 && dd <= 28 & yyyy != yyyy % 4)
+				{
+					cout << "February " << dd << "," << yyyy;
+				}
+				else if (dd > 0 && dd <= 29  && yyyy % 4 == 0 && yyyy % 100 != 0 || yyyy % 400 == 0)
+				{
+					cout << "February " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid date!" << endl;
+				}
+				break;
+			case 3:
+				if (dd>0 && dd <= 31)
+				{
+					cout << "March " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 4:
+				if (dd>0 && dd <=30)
+				{
+					cout << "April " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 5:
+				if (dd>0 && dd <=31)
+				{
+					cout << "May " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 6:
+				if (dd>0 && dd<=30)
+				{
+					cout << "June " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 7:
+				if (dd>0 && dd <= 31)
+				{
+					cout << "July " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 8:
+				if (dd>0 && dd<=31)
+				{
+					cout << "August " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 9:
+				if (dd>0 && dd<=30)
+				{
+					cout << "September " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 10:
+				if (dd>0 && dd<=31)
+				{
+					cout << "October " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 11:
+				if (dd>0 && dd <=30)
+				{
+					cout << "November " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+			case 12:
+				if (dd>0 && dd <=31)
+				{
+					cout << "December " << dd << "," << yyyy;
+				}
+				else
+				{
+					cout << "Invalid Date!" << endl;
+				}
+				break;
+		}
+	else
+	{
+		cout << "Invalid date!" << endl;
+		break;
+	}
+	cout << "\n" << endl;
+}
+
+while (mm,dd,yyyy != 0);
+
+	return 0;
+}
